@@ -1,16 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Link, Element } from 'react-scroll';
+import HomePage from './components/HomePage';
+import ExperiencePage from './components/ExperiencePage';
+import ProjectPage from './components/ProjectPage';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
-function App() {
+
+const App = () => {
   return (
-    <>
-      <div>
-        <h1 className='text-3xl font-bold underline'>Hello Erik!</h1>
-      </div>
-    </>
-  )
-}
+    <div className="App">
+      <Navbar />
+      <Element name="home" className="element">
+        <HomePage />
+      </Element>
+      <Element name="experience" className="element">
+        <ExperiencePage />
+      </Element>
+      <Element name="projects" className="element">
+        <ProjectPage />
+      </Element>
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
+
+
+
