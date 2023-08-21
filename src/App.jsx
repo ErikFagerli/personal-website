@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App bg-zinc-900 overflow-hidden">
       <Navbar />
       <Element name="home" className="element">
         <HomePage />

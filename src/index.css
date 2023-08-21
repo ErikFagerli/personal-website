@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Gza';
+    src: local('Gza Regular'), local('Gza-Regular'),
+        url('Gza-Regular.woff2') format('woff2'),
+        url('Gza-Regular.woff') format('woff'),
+        url('Gza-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.name {
+    font-family: Gza;
+    font-size: 55px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
